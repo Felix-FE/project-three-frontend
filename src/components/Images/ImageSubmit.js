@@ -228,7 +228,7 @@ function ImageSubmit() {
         <label>{madeBy.username}</label>
       </div>}
             <div>
-              <button type="submit" className="button" 
+              <button type="button" className="button" 
                 onClick={handleSubmit}>Upload</button>
               {isUploading && <p>...Uploading</p>}
             </div>
