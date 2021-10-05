@@ -5,7 +5,7 @@ import ReactMapGL, { Marker, Popup } from 'react-map-gl'
 
 import { getImages } from '../../functionLib/api'
 import { selectOptions, continentOptions } from '../../functionLib/variables'
-import ImageCard from '../images/ImageCard'
+import ImageCard from '../Images/ImageCard.js'
 
 function Home() {
   const [images, setImages] = React.useState(null)
@@ -113,7 +113,7 @@ function Home() {
             mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
             height="100%"
             width="100%"
-            mapStyle='mapbox://styles/hollylouisarose/cksrc0zi20n2o17q8f17hifcw'
+            mapStyle='mapbox://styles/mapbox/light-v10'
             onViewportChange={(nextViewport) => setViewport(nextViewport)}
             {...viewport}
             pitch={0}

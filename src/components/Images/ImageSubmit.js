@@ -118,7 +118,7 @@ function ImageSubmit() {
       await createImage(output)
       history.push(`/users/${madeBy._id}/pictures`)
     } catch (err) {
-      console.log(err.response.data)
+      console.log(err)
     }
   }
   const [isUploading, setIsUploading] = React.useState(false)
@@ -132,7 +132,7 @@ function ImageSubmit() {
       setIsUploading(false)
       return (res.data.url)
     } catch (err) {
-      console.log(err.response.data)
+      console.log(err)
     }
   }
 
@@ -196,7 +196,7 @@ function ImageSubmit() {
                       mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
                       height="90%"
                       width="90%"
-                      mapStyle="mapbox://styles/hollylouisarose/cksrc0zi20n2o17q8f17hifcw"
+                      mapStyle="mapbox://styles/mapbox/light-v10"
                       onViewportChange={(nextViewport) => setViewport(nextViewport)}
                       {...viewport}
                       pitch={0}

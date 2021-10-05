@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { getImage } from '../../functionLib/api.js'
-import ImageCard from '../images/ImageCard.js'
+import ImageCard from '../Images/ImageCard.js'
 
 function CollectionCard({ collection }) {
   const [inputs, setInputs] = React.useState([])
