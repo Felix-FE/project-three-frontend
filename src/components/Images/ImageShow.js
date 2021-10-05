@@ -3,7 +3,9 @@ import { useParams, Link, useHistory } from 'react-router-dom'
 import { getImage, showUser, editUser } from '../../functionLib/api.js'
 import { isAuthenticated, getPayload, isOwner } from '../../functionLib/auth.js'
 import ReactMapGL, { Marker } from 'react-map-gl'
+import mapboxgl from 'mapbox-gl'
 
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default
 function ImageShow() {
   const { imageId } = useParams()
   const history = useHistory()

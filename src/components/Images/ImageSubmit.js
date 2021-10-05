@@ -8,7 +8,9 @@ import { useHistory } from 'react-router-dom'
 import { createImage, showUser } from '../../functionLib/api.js'
 import { getPayload } from '../../functionLib/auth.js'
 import { selectOptions } from '../../functionLib/variables'
+import mapboxgl from 'mapbox-gl'
 
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default
 const uploadUrl = process.env.REACT_APP_CLOUDINARY_URL
 const uploadPreset = process.env.REACT_APP_CLOUDINARY_UPLOAD_PRESET
 

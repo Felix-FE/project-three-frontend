@@ -4,7 +4,9 @@ import axios from 'axios'
 import Select from 'react-select'
 import CreatableSelect from 'react-select/creatable'
 import { useParams, useHistory } from 'react-router-dom'
+import mapboxgl from 'mapbox-gl'
 
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default
 import { getImage, showUser, editImage } from '../../functionLib/api.js'
 import { selectOptions } from '../../functionLib/variables'
 
