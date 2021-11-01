@@ -195,7 +195,7 @@ function ImageShow() {
                 mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
                 height="100%"
                 width="100%"
-                mapStyle='mapbox://styles/hollylouisarose/cksrc0zi20n2o17q8f17hifcw'
+                mapStyle='mapbox://styles/mapbox/light-v10'
                 onViewportChange={(nextViewport) => setViewport(nextViewport)}
                 {...viewport}
                 latitude={inputs.latitude}
